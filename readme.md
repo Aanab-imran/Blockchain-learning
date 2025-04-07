@@ -36,4 +36,15 @@ Dapp (Decentralized Application)
 Smart Contract
 Hybrid Smart Contract
 Ethereum/EVM
-### Essence of Blockchain and Smart Contracts
+
+## Features of Smart Contracts
+### Decentralization
+No centralized intermediary; runs on a blockchain maintained by many node operators.
+### Transparency and Flexibility
+Transparent (all node operators can see on-chain data), ensuring fairness without compromising privacy.
+### Speed and Efficiency
+Faster than traditional banking systems; blockchain transactions are nearly instant.
+### Security and Immutability
+Once deployed, smart contracts can't be altered. Blockchain's decentralized nature makes hacking difficult.
+### Elimination of Counterparty Risk
+No trust required; terms can't be changed once the contract is deployed.
