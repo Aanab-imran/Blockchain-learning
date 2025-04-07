@@ -1,4 +1,4 @@
-## Introduction
+## Introduction:
 Overview of Cyfrin Updraft!
 Solidity and Smart Contract developers.
 Fast-tracking learning with AI tools.
