@@ -52,9 +52,9 @@ No trust required; terms can't be changed once the contract is deployed.
 ## Applications of Smart Contracts
 ### Decentralized Finance (DeFi)
 Enables financial transactions without intermediaries offering transparent access to markets.
-## Decentralized Autonomous Organizations (DAOs)
+### Decentralized Autonomous Organizations (DAOs)
 Governed by smart contracts, providing transparent and decentralized governance.
-## Non-Fungible Tokens (NFTs)
+### Non-Fungible Tokens (NFTs)
 Digital unique assets or art, enabling creators to monetize their work.
-## Other Applications
+### Other Applications
 Potential for new innovations in smart contract uses.
