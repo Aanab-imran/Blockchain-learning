@@ -58,3 +58,16 @@ Governed by smart contracts, providing transparent and decentralized governance.
 Digital unique assets or art, enabling creators to monetize their work.
 ### Other Applications
 Potential for new innovations in smart contract uses.
+## MetaMask Wallet Setup 
+### Switch to Test Network
+### Sending Your First Transaction:
+Create New Account in MetaMask
+## Testnets Overview:
+ Tenderly is our preferred virtual testnet tool for deploying smart contracts and making transactions.
+ ### Testnet Transactions:
+Learn how to send transactions on a testnet
+### Testnet Exploration:
+Explore testnet explorers like Etherscan or Blockscout
+## Testnet Basics:
+Sepolia is a popular testnet for experimenting with transactions without real money
+#### Connecting Wallet to Faucet
