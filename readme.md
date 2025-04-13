@@ -71,4 +71,104 @@ Explore testnet explorers like Etherscan or Blockscout
 ## Testnet Basics:
 Sepolia is a popular testnet for experimenting with transactions without real money
 #### Connecting Wallet to Faucet
-## 
+## Transaction Fee and Gas Price:
+### Transaction Fee:
+The amount rewarded to the block producer for processing the transaction
+it is paid in Ether or GWei.
+### Gas Price:
+Gas price is the cost per unit of that effort.
+#### Connecting Wallet to Faucet
+
+
+###  Nodes in Blockchain
+
+
+### Gas in Transactions:
+ Gas signifies a unit of computational complexity
+ ### Transaction Fee:
+  Calculated as:
+
+Transaction Fee = Gas Price * Gas Used
+### Hash
+A unique fixed length string, mean to identify a piece of data.they are created by placing said data into a "hash function"
+ Ethereum uses Keccak-256 
+ Mining is the process of finding a nonce that generates a hash matching a certain condition
+ ### Blockchain: Immutability
+A blockchain is a linked chain of blocks
+### Genesis Block: 
+This is the first block in a blockchain
+### Blockchain & Transactions
+The data inside real blockchain blocks usually consists of transactions
+Multiple transactions are grouped and hashed together
+### Private key
+only known to the key holder its used to "sign"transaction.
+A private key is a randomly generated secret key used to sign all transactions
+The private key must remain secret
+### Public key
+public key is derived from your private key anyone can see it and use it to verify that a transaction came from you.
+Public keys are visible to everyone on the blockchain
+### Signing a Transaction
+A one way process someone with a private key signs a transaction by their private key being heshed with the transaction data
+The signature can be verified by anyone using the corresponding public key
+### Importance of Hiding Private Keys
+Access your wallet
+Sign and send transactions
+### What is Gas in Blockchain?
+Gas is the unit of computation required to perform actions on the Ethereum blockchain (e.g., sending ETH, executing smart contracts)
+##  Transaction Breakdown
+### Transaction Fee
+Transaction Fee = Gas Used × Gas Price
+###  Gas Limit
+The maximum gas allowed for the transaction
+Set by the user before sending
+###  Base Fee
+The minimum cost per gas unit, shown in Gwei.
+Introduced in EIP-1559
+Burnt after each transaction — removed from circulation to fight inflation
+### Max Gas Fee
+The maximum a user is willing to pay per gas unit
+## Blockkchain Overview
+#### Node 
+A single instance in a decentralized network
+### traditional network
+ controlled and run by a single centralized group
+ ###  Consensus
+Consensus is the mechanism used to reach an agreement on the state or a single value on the blockchain, especially in a decentralized system
+### Blockchain Attacks
+Sybil Attack  When a user creates a number of pseudo-anonymous accounts to try to influence a network
+51% Attack One entity controls majority hash power; can double-spend or alter blockchain history
+### Layer1:
+Base layer of the blockchian ecosystem in which transactions are executed and confirmed
+### Layer2
+layer2 is any application built on outside an L1 blockchain that hooks back into it
+### Blockchain Rollup:
+Scaling sloution that increases the number of transaction on the L1 chain
+### Optimistic Rollups:
+Optimistic Rollups assume that the off-chain transactions are valid by default(Assume transactions are legitimate)
+Use fraud proof to verify correctness in the case of dispute
+### zk Rollups: (Zero knowledge)
+Zk Rollups solution prove each transaction bach to be correct using validity proofs or Zk proofs
+ZK proofs are the complex mathematical cryptographic problem
+### ZK proofs involves two participants:
+#### Prover
+That is trying to prove that they know something
+#### Verifier
+That is verifying that the prover does in fact know the answer to the problem
+### Sequencer
+The sequencer usually refers to the operator which is ordring the transactions bundling them together
+### Rollup Stage
+Stage of a rollup is a categorization framework based on Vitalix proposed milestones
+#### Stage 0 (Full traning wheel)
+In stage 0 the operators and a security council predominantly manage the rollup
+Open source software for data  avalibility
+### Data avalibility
+Data avalibility refers to the confidence a user can have that the data required to verify a block really is avaliable to all network participants
+### Stage 1(Enhanced Rollup Governance)
+Governed by small contracts 
+Security council for bug resolution
+### Stage 2 (No Traning wheels)
+Completed Decentralized
+Smart contract manage the rollup
+Ample time to exit system in the case of upgrades
+
+# Solidity Smart Contract Development
