@@ -172,3 +172,60 @@ Smart contract manage the rollup
 Ample time to exit system in the case of upgrades
 
 # Solidity Smart Contract Development
+### introduction
+Accounts You Should Have
+#### GitHub (For code + discussions)
+#### Stack Exchange Ethereum (For dev-level questions)
+#### ChatGPT (AI explanations) 
+#### Google Gemini  (Free AI that also understands YouTube videos)
+### Remix IDE
+Online tool for writing, compiling, and deploying Solidity smart contracts
+### What is Compiling?
+Converts your Solidity code (human-readable)Bytecode (machine-readable)
+Required to deploy on blockchain
+ ### Elementary Data Types in Solidity
+ #### Boolean (bool): true or false
+ like someone have active account or not
+ bool isActive = true;
+ #### Unsigned Integer (uint,unit256)
+ 
+ if you wrote unit only it is consider 256
+ Address (address): 20 bytes value
+ e.g; 
+ uint256 age = 25;
+uint amount = 100;
+ Bytes (bytes): low-level raw byte data
+ ### signed intiger (int, int256)
+it take both positive and negative
+someone balance is also -100
+int256 balance = -50;
+ ### Address (address)
+ it is always 20 bytes 
+ Ethereum address (the address of a wallet or a smart contract)
+It is mostly used to send funds to someone or to interact with a smart contract
+address myWallet = 0xAbC123...;
+### String (string)
+it store text or words
+its is dynamic(not fixed in size)e.g name of a user or message
+string name = "Alice";
+### Bytes (bytes, bytes32)
+Used to store low-level data, such as raw hexadecimal values.
+bytes32 means a fixed-size array of 32 bytes.
+bytes is dynamic, meaning it can change in size depending on the data.
+### Bytes vs Strings
+Feature    	       bytes                     	             string
+Format    	       Hexadecimal	                           Text-based
+Type             	 Low-level, raw data	                   High-level, dynamic text
+Flexibility	       Fixed (bytes1 - bytes32) or dynamic     Always dynamic
+### Function in Solidity
+Functions are blocks of code to perform specific tasks
+Arrays store values without identity
+No way to link a number with a person's name
+### Error
+Errors must be fixed before deployment
+### Warnings 
+ bad practices, but code still works. You should still fix them
+ #### Calldata
+Calldata variables are read-only and cheaper than memory. They are mostly used for input parameters
+### Mapping
+A mapping is defined using the mapping keyword, followed by the key type, the value type, the visibility, and the mapping name
