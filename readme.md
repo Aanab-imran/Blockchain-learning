@@ -229,3 +229,96 @@ Errors must be fixed before deployment
 Calldata variables are read-only and cheaper than memory. They are mostly used for input parameters
 ### Mapping
 A mapping is defined using the mapping keyword, followed by the key type, the value type, the visibility, and the mapping name
+##  Deploying a Solidity Contract to a Testnet
+### Testnet
+A testnet is a public blockchain network used for testing purposes. It behaves like the mainnet but uses test ETH, which has no real-world value
+####  Final Checks Before Deployment
+#### Connect MetaMask to Remix
+#### Switch to Sepolia Testnet
+#### Get Test ETH
+#### Deploy the Contract
+####  View Contract on Etherscan
+
+### zkSync Deploying
+#### zkSync Faucet
+Similar to Sepolia faucet Provides free test ETH for zkSync testnet May be unreliable at times
+#### zkSync Bridge
+Transfers test ETH from Ethereum Sepolia to zkSync Testnet More reliable than faucet Requires ETH in Sepolia and a bridging transaction
+
+### zkSync Bridging
+ Connect MetaMask to zkSync Bridge
+ Get Sepolia ETH 
+ Bridge to zkSync
+ Transfer Funds
+ Add zkSync Sepolia to MetaMask
+Visit Chainlist
+
+### zkSycn Plugin 
+#### Compile the Contract
+Use Solidity version 0.8.24 to match zkSync compiler requirements
+#### Deploy the Contract
+MetaMask will prompt you for a signature – approve it
+#### Verify the Contract
+This confirms that the contract is deployed and verified
+#### Check on zkSync Sepolia Explorer
+ zkSync Sepolia Block Explorer to..
+ As of now, the zkSync plugin has a minor bug. Refer to Lesson 14 for a workaround
+
+ ### zkSycn Plugin Fix
+ After successful compilation, zkSync plugin may still show:
+no smart contracts ready for deployment
+
+### zkSycn interactions
+#### functions
+addPerson
+listOfPeople
+nameToFavoriteNumber
+retrieve
+store
+
+#### EVM 
+Ethereum Virtual Machine
+Allows contracts to run on EVM-compatible blockchains like
+Ethereum
+Polygon
+Arbitrum
+Optimism
+zkSync
+Common types: uint256, bool, string
+Custom types: struct
+Collections: array, mapping
+
+### Storage Factory introduction
+All thee Github repos associated with this course end with f12 which stands for foundry 2023
+#### SimpleStorage.sol
+The base contract for storing a favoriteNumber
+#### AddFiveStorage.sol
+Inherits from SimpleStorage, with added logic
+#### StorageFactory.sol
+Manages and interacts with multiple deployed instances of SimpleStorage
+Index 0 :First deployed SimpleStorage
+Index 1 : Second deployed SimpleStorage, and so on
+
+### Composability
+Composability is the ability of smart contracts to interact with one another seamlessly and permissionlessly
+It's allowed to have multiple contracts in the same file
+
+### Import
+The import keyword in Solidity helps maintain clean, modular, and reusable smart contract code.
+ No Cluttering: Keeps your files short and readable.
+Simplified Maintenance: Update logic in one file and reflect changes wherever it’s imported
+ When using import, all imported files must share compatible compiler versions.
+
+ ###  Using AI tools 
+ Using AI tools like ChatGPT or Bard can accelerate your learning, especially when used effectively.
+Good AI Prompt Format
+
+### Contract Composition via StorageFactory
+Deploy multiple instances of another contract (SimpleStorage)
+Keep track of those deployments
+Interact with each deployed contract individually
+
+### Inheritance 
+allows one contract (child) to inherit the functions and variables of another contract (parent)
+### Overriding Functions
+You can customize inherited functions using the override keyword — but only if the parent function is marked as virtual
