@@ -322,3 +322,139 @@ Interact with each deployed contract individually
 allows one contract (child) to inherit the functions and variables of another contract (parent)
 ### Overriding Functions
 You can customize inherited functions using the override keyword — but only if the parent function is marked as virtual
+### FundMe 
+The main crowdfunding contract where users can contribute and the owner can withdraw funds
+### PriceConverter 
+A utility contract used to enforce minimum funding amounts based on real-world currency
+### fund and withdraw
+After deploying the FundMe contract in Remix, you’ll notice several functions. Among them is a red fund button, which is colored red because it’s a payable function. This means it can receive native blockchain tokens
+
+### Reverts
+Definition: Reverts undo all state changes made during the transaction
+###  Gas
+Purpose: Measures the computational cost of running operations on the EVM
+#### NOTE
+ If a transaction reverts, is defined as failed
+#### For Value Transfers
+Nonce – Tx count of sender
+Gas Price – Price per gas unit
+Gas Limit – Max gas allowed
+To – Recipient address
+Value – ETH amount in wei
+Data – Empty
+v, r, s – Signature components
+#### For Contract Interactions
+Same as above, except:
+To – Smart contract address
+Data – Contains function call + parameters
+
+### payable
+Purpose: Allows a function to receive ETH or native blockchain tokens
+### msg.value
+Represents the amount of ETH (or native token) sent with the transaction
+### require()
+Used to enforce conditions and revert if not met
+### Chainlink 
+Chainlink allows smart contracts to interact with external (off-chain) data in a decentralized way
+
+### Goal
+Convert  (ETH) to USD
+Use Chainlink Price Feed to get current ETH/USD price
+#### Source
+ Chainlink Price Feed Addresses
+### Interfaces in Solidity
+A way to interact with external contracts without full code
+Decouples your contract from external contract logic
+Makes code modular, reusable, and testable
+
+#### NPM and Github
+ when interpreted by the Solidity compiler in Remix or another development environment, means “Import the AggregatorV3Interface interface from a specific file path inside the @chainlink/contracts NPM package.”
+
+###  getPrice
+The getPrice function returns the current value of Ethereum in USD as a uint256
+### getConversionRate
+ The getConversionRate function converts a specified amount of ETH to its USD equivalent
+Always multiply before dividing to maintain precision and avoid truncation errors
+Compile the contract in Remix.
+Select "Injected Provider - Metamask" under the ENVIRONMENT tab in the Deploy & Run Transactions plugin.
+Ensure you're connected to a testnet like Sepolia
+
+### Tracking Funders
+Track which addresses fund the contract
+Track how much ETH each address sends
+Track how many times each address contributes
+### Mapping Address
+This mapping links each address to the total amount they’ve sent
+msg.value is the amount of ETH sent in the transaction
+###  Tracking Number
+This keeps track of how many times an address has sent ETH
+
+### Interacting with External Contracts
+To interact with a contract already deployed on the blockchain, you need
+Contract Address – Identifies where the contract lives
+Write an interface that matches the external contract
+### Chainlink Price Feeds
+Chainlink provides live price data from the real world
+These are useful when your smart contract needs trusted price data
+### Solidity Global Properties
+These are built-in variables that give info about the blockchain, block, or transaction
+msg.sender: the address of the caller (who's interacting with the contract)
+
+###  Library in Solidity
+A library in Solidity is like a helper module that stores reusable code (functions). It is ideal for extracting common logic such as price conversions or math operations
+ Clean up large contracts by moving reusable functions into separate files
+ ### Important Rule
+If a library function is not marked internal,
+The library must be deployed separately, and
+The contract must link to the library at compile time (more complex and expensive)
+Use internal functions in libraries to keep them embedded and simple
+
+###  Integer Overflow
+An integer overflow occurs when a number exceeds the maximum value that a variable type can store
+Before Solidity 0.8.0, this operation would not trigger an error—it would silently wrap the value, causing unexpected behavior or security vulnerabilities
+#### SafeMath
+The SafeMath library was used to prevent overflows and underflows by checking mathematical operations and reverting if something went wrong
+
+###  for Loop
+A for loop is a control structure that runs a block of code repeatedly, usually based on an index or counter
+#### Use for Loops in FundMe
+In the FundMe contract, we use a for loop to reset all funders’ contributions after a withdrawal
+#### Key Shortcuts Used
+funderIndex++
+Means funderIndex = funderIndex + 1
++=
+Means x = x + y
+###  Reset an Array
+In Solidity, you often need to clear the contents of an array after performing an action like withdrawing funds — especially in fundraising contracts like FundMe
+### Goal
+To send ETH from a smart contract to an external address, Solidity offers three main methods:
+transfer
+send
+call
+#### transfer
+ends ETH to a payable address
+Automatically reverts the transaction on failure
+Has a gas limit of 2300
+Simple but outdated for many use cases
+#### send
+solidity
+Copy
+Edit
+Same gas limit as transfer (2300)
+Returns a boolean (true or false) instead of reverting
+Manual error handling required using require
+⚠️ Less safe than transfer since it doesn't auto-revert. Must check return value!
+### call 
+Most flexible and recommended method.
+No fixed gas limit.
+Can interact with both:
+functions
+or simply send ETH
+Returns:
+a boolean for success
+a bytes object for return data
+#### payable
+Solidity requires addresses to be explicitly marked as payable in order to receive ETH.
+
+### Constructor
+A constructor is a special function that runs once, automatically, when the contract is deployed.
