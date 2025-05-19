@@ -443,7 +443,7 @@ Edit
 Same gas limit as transfer (2300)
 Returns a boolean (true or false) instead of reverting
 Manual error handling required using require
-⚠️ Less safe than transfer since it doesn't auto-revert. Must check return value!
+ Less safe than transfer since it doesn't auto-revert. Must check return value!
 ### call 
 Most flexible and recommended method.
 No fixed gas limit.
