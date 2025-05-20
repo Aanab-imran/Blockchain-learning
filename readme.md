@@ -457,4 +457,30 @@ a bytes object for return data
 Solidity requires addresses to be explicitly marked as payable in order to receive ETH.
 
 ### Constructor
-A constructor is a special function that runs once, automatically, when the contract is deployed.
+A constructor is a special function that runs once, automatically, when the contract is deployed
+### What are Modifiers
+Modifiers are reusable code blocks that can be attached to functions
+used for:
+Access control
+Input validation
+Condition enforcement
+### _ (underscore)
+_ must come after the condition
+If you place _ before require, it would run the function logic before the check — which is unsafe
+Gas = Cost. Reducing gas used lowers the cost of deploying and using the contract
+constant and immutable help reduce storage reads/writes, which are expensive operations in Ethereum
+FundMe Contract 
+Original deployment gas: ~859,000
+### zkSycn
+After compiling a contract using the ZKsync Remix plugin, the deploy tab shows
+no smart contracts ready for deployment
+### Adjustments for ZKsync Deployment
+ Use Correct Chainlink Price Feed
+Get the ETH/USD price feed address for ZKsync Sepolia from:
+ Chainlink Price Feeds – ZKsync
+Solidity Version Compatibility
+Library Handling Issue
+###  Special Functions
+constructor: Initializes the contract; runs once during deployment
+receive()
+Triggered when ETH is sent with no data
