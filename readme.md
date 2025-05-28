@@ -484,3 +484,35 @@ Library Handling Issue
 constructor: Initializes the contract; runs once during deployment
 receive()
 Triggered when ETH is sent with no data
+#### 6 steps to solve any problem you may face
+Tinker
+ Ask Your AI
+ (principle 1 Write clear and speific instruction
+ principle 2 Give as much context as possible
+ principle 3 Look out for hallucinations
+ principle 4 Understand limitations
+ principle 5 Iterate constantly)
+ Read Docs
+ Web Search
+ Ask in a Forum
+ Ask on the Support Forum or GitHub
+ Iterate
+#### Limit Self-Triage Time
+Spend 15–20 minutes max troubleshooting an issue on your own
+####  Using AI Tools
+Use tools like ChatGPT to assist, but don’t rely on them fully
+AI can hallucinate
+#### Developer Forums
+Use Stack Exchange and Peeranha for help
+Format questions clearly using Markdown
+Use AI to learn proper question formatting
+Use GitHub as your project portfolio—important for job applications
+GitHub is essential for code sharing, collaboration, and issue tracking
+If you don’t have an account, create one now — it's imperative for course participation
+####  Markdown Formatting
+Vital for readability
+Use AI tools (like ChatGPT) to help format your questions if needed
+###  Scaffold-ETH 2
+Tool for Solidity learners
+Offers a dynamic front-end UI that syncs with your smart contract changes
+Lets you visualize and interact with your code in real time
