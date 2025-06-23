@@ -516,3 +516,60 @@ Use AI tools (like ChatGPT) to help format your questions if needed
 Tool for Solidity learners
 Offers a dynamic front-end UI that syncs with your smart contract changes
 Lets you visualize and interact with your code in real time
+
+
+
+
+
+### (EASY) PROJECTS
+#### 1.Simple Storage
+Learned:
+uint state variable
+creat set and get function
+
+### 2.Favourite Number Tracker
+Learned:
+use mapping(string => uint) 
+
+### 3.Simple Counter
+Learned:
+arithemetic 
+state mutability
+
+### 4.To-Do List
+Learned:
+defie struct
+array ,bool
+
+### 5.Simple Bank
+Learned:
+ETH using payable and msg.value
+balance tracking
+
+### 6.Voting System
+Learned:
+mapping ,require(no double voting)
+using if/else 
+
+### 7.Access-Controlled Storage
+Learned:
+use constructor 
+require (msg.sender == owner)
+modifier
+
+### 8.ETH Piggy Bank
+Learned:
+block.timestamp ,require
+
+### 9. Basic NFT 
+Learned:
+custom ID logic 
+
+### 10.Fund Splitter
+Learned:
+ETH transfers, arithematic ,payable
+
+#### deposit
+user send ETH to contract and their balance is recorded
+#### Withdraw 
+user requests to take back their stored ETH from the contract
