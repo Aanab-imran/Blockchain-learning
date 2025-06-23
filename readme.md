@@ -571,5 +571,3 @@ ETH transfers, arithematic ,payable
 
 #### deposit
 user send ETH to contract and their balance is recorded
-#### Withdraw 
-user requests to take back their stored ETH from the contract`
